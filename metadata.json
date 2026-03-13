@@ -1,0 +1,7 @@
+{
+  "name": "Kinolog",
+  "description": "A professional-grade video metadata extractor and specification builder for film professionals.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
