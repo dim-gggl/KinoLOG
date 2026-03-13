@@ -1,20 +1,34 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# KinoLOG
 
-# Run and deploy your AI Studio app
+> Analyze video content. Build generation prompts.
 
-This contains everything you need to run your app locally.
+A Gemini-powered terminal-aesthetic tool for video intelligence. Two modes:
+- **Ingest** — analyze a video and extract structured metadata (description, themes, mood, visual language)
+- **Build** — use that metadata to craft a precise prompt for video/image generation
 
-View your app in AI Studio: https://ai.studio/apps/2b6e85e6-22e4-483f-845e-c353355bb2e5
+Export as JSON, Markdown, or plain text.
 
-## Run Locally
+## Features
 
-**Prerequisites:**  Node.js
+- 📥 Ingest mode: video content analysis via Gemini
+- 🔨 Build mode: structured prompt builder from video metadata
+- 💾 Export to JSON / Markdown / text
+- 🖤 Dark terminal UI
 
+## Stack
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+React · TypeScript · Vite · Gemini API
+
+## Run locally
+
+**Prerequisites:** Node.js, a Gemini API key
+
+```bash
+npm install
+cp .env.local.example .env.local  # add your GEMINI_API_KEY
+npm run dev
+```
+
+## Live demo
+
+[Open in AI Studio](https://ai.studio/apps/2b6e85e6-22e4-483f-845e-c353355bb2e5)
